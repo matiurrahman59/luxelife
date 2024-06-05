@@ -1,0 +1,70 @@
+.section-about {
+  background-color: $color-secondary;
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+
+  // &__box {
+  //   gap: 4rem;
+  // }
+
+  &__image {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+    gap: 2.4rem;
+
+    &--1 {
+      width: 100%;
+      max-height: 43.8rem;
+      height: 100%;
+    }
+
+    &--2 {
+      width: 100%;
+      height: 100%;
+      padding-top: 3.6rem;
+    }
+  }
+
+  &__project-counter {
+    position: absolute;
+  }
+
+  &__right {
+    padding-top: 7rem;
+  }
+
+  .section-title {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 1px;
+      background-color: $color-primary;
+    }
+  }
+
+  p {
+    padding-top: 2rem;
+    // text-wrap: balance;
+  }
+
+  &__details {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    position: relative;
+
+    .svg-line {
+      position: absolute;
+      height: 100%;
+    }
+
+    div {
+      padding-left: 4.5rem;
+    }
+  }
+}
