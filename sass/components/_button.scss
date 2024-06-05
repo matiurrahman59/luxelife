@@ -1,0 +1,28 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    font-family: $font-display;
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    letter-spacing: 1.28px;
+
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.2s;
+    position: relative;
+    border: none;
+    cursor: pointer;
+  }
+
+  &-primary {
+    background-color: $color-primary !important;
+    padding: 1.4rem 2.5rem;
+
+    &:hover {
+      background-color: $color-primary-dark !important;
+    }
+  }
+}

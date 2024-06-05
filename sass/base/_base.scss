@@ -14,8 +14,7 @@ html {
 
 body {
   box-sizing: border-box;
-  // font-family: 'Rajdhani', sans-serif;
-  font-family: 'Rubik', sans-serif;
+  font-family: $font-primary;
   font-weight: 400;
   font-size: $default-font-size;
   line-height: 3rem;
