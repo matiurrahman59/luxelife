@@ -11886,33 +11886,38 @@ body {
   position: relative;
 }
 
+.section-padding {
+  padding: 12rem 0;
+}
+
 .section-about {
   background-color: #f4f4f4;
   padding-top: 12rem;
   padding-bottom: 12rem;
 }
-.section-about__image {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 100%;
-  gap: 2.4rem;
-}
-.section-about__image--1 {
+.section-about .about__image--box {
   width: 100%;
-  max-height: 43.8rem;
-  height: 100%;
 }
-.section-about__image--2 {
-  width: 100%;
-  height: 100%;
-  padding-top: 3.6rem;
-}
-.section-about__project-counter {
+.section-about .project-countdown {
   position: absolute;
+  bottom: 3rem;
+  left: 4rem;
+  z-index: -10;
+  text-align: center;
+  padding: 2.6rem;
+  background-color: #f0e8db;
 }
-.section-about__right {
-  padding-top: 7rem;
+.section-about .project-countdown__box {
+  background-color: #d9a14c;
+  padding: 2rem 3rem;
+  color: #fff;
+}
+.section-about .project-countdown__box > div:first-of-type {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+  text-transform: capitalize;
 }
 .section-about .section-title::after {
   content: "";
@@ -11938,6 +11943,33 @@ body {
 }
 .section-about__details div {
   padding-left: 4.5rem;
+}
+
+.section-service {
+  background-color: #23262d;
+}
+.section-service .service-list__box {
+  padding-top: 10rem;
+  color: #fff;
+}
+.section-service .service-list__box-gap {
+  gap: 14rem;
+}
+.section-service .service-list__box p {
+  opacity: 0.72;
+  padding-top: 2rem;
+}
+.section-service .service-list__box a {
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4rem;
 }
 
 /*# sourceMappingURL=style.css.map */
