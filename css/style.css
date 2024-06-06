@@ -1,3 +1,237 @@
+html {
+  /* This defines what 1rem is  */
+  font-size: 62.5% !important;
+  /* 1 rem = 10px; 10px/16px = 62.5% */ }
+
+body {
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 1.6rem !important;
+  line-height: 3rem !important;
+  color: #23262d !important;
+  background-color: #fff !important; }
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.heading-secondary {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+  text-transform: capitalize; }
+
+.heading-tertiary {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3rem; }
+
+.section-title {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 2.7px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #d9a14c;
+  position: relative; }
+
+.section-padding {
+  padding: 12rem 0; }
+
+.btn-primary, .btn-primary:link, .btn-primary:visited {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 1rem !important;
+  padding: 1.4rem 2.5rem;
+  background-color: #d9a14c;
+  color: #fff;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  letter-spacing: 1.28px;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.2s;
+  position: relative;
+  border: none; }
+  .btn-primary:hover, .btn-primary:link:hover, .btn-primary:visited:hover {
+    background-color: #ff9205 !important; }
+
+.section-about {
+  background-color: #f4f4f4;
+  padding-top: 12rem;
+  padding-bottom: 12rem; }
+  .section-about .about__image--box {
+    width: 100%; }
+  .section-about .project-countdown {
+    position: absolute;
+    bottom: 3rem;
+    left: 4rem;
+    text-align: center;
+    padding: 2.6rem;
+    background-color: #f0e8db; }
+    .section-about .project-countdown__box {
+      background-color: #d9a14c;
+      padding: 2rem 3rem;
+      color: #fff; }
+      .section-about .project-countdown__box > div:first-of-type {
+        font-family: "Rajdhani", sans-serif;
+        font-size: 4.8rem;
+        font-weight: 700;
+        line-height: 6rem;
+        text-transform: capitalize; }
+  .section-about .section-title::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 1px;
+    background-color: #d9a14c; }
+  .section-about p {
+    padding-top: 2rem; }
+  .section-about__details {
+    margin-left: 4rem;
+    margin-top: 4rem;
+    position: relative; }
+    .section-about__details .svg-line {
+      position: absolute;
+      height: 100%; }
+    .section-about__details div {
+      padding-left: 4.5rem; }
+
+.section-service {
+  background-color: #23262d;
+  position: relative;
+  background-image: url(../../img//service-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 80%; }
+  .section-service .service-list__box {
+    padding-top: 10rem;
+    color: #fff; }
+    .section-service .service-list__box-gap {
+      gap: 14rem; }
+    .section-service .service-list__box p {
+      opacity: 0.72;
+      padding-top: 2rem; }
+    .section-service .service-list__box a {
+      font-family: "Rajdhani", sans-serif;
+      font-weight: 700;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: #fff;
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 4rem; }
+      .section-service .service-list__box a i {
+        color: #fff; }
+      .section-service .service-list__box a:hover .lucide-arrow-right {
+        transform: translateX(5px);
+        transition: all 0.3s ease;
+        color: #d9a14c; }
+
+.section-gallery .gallery-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end; }
+
+.section-gallery .gallery {
+  padding-top: 5.2rem; }
+  .section-gallery .gallery__img {
+    width: 100%;
+    height: 39rem;
+    object-fit: cover;
+    display: block; }
+
+.section-counter {
+  max-width: 1760px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff; }
+  .section-counter-wrapper {
+    background-color: #d9a14c; }
+  .section-counter .counter-card {
+    padding: 8rem 0;
+    border-right: 1px solid rgba(255, 255, 255, 0.2); }
+  .section-counter .video-thumbnail {
+    height: 66.9rem;
+    position: relative;
+    background-color: #23262d; }
+    .section-counter .video-thumbnail__overlay {
+      position: absolute;
+      inset: 0;
+      z-index: 10;
+      background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.51) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .section-counter .video-thumbnail__overlay .video-play-button__wrapper {
+        height: 16.4rem;
+        width: 16.4rem;
+        border-radius: 100%;
+        display: grid;
+        place-items: center;
+        background-color: rgba(217, 161, 76, 0.7);
+        color: #fff;
+        outline: 5px solid #d9a14c;
+        outline-offset: 1rem; }
+        .section-counter .video-thumbnail__overlay .video-play-button__wrapper .play-icon {
+          height: 100px;
+          width: 100px; }
+    .section-counter .video-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+.section-product .product-card {
+  border: 1px solid #f8ecdd;
+  overflow: hidden; }
+  .section-product .product-card__image {
+    height: 41.1rem;
+    background-color: #f8ecdd;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .section-product .product-card__image img {
+      width: 202px;
+      object-fit: cover; }
+  .section-product .product-card__details {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; }
+  .section-product .product-card__button {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem; }
+
 /*!
    * Bootstrap  v5.3.3 (https://getbootstrap.com/)
    * Copyright 2011-2024 The Bootstrap Authors
@@ -219,28 +453,44 @@ h1, .h1 {
     h1, .h1 {
       font-size: 2.5rem; } }
 
-h2, .h2 {
+
+h2,
+.h2 {
   font-size: calc(1.325rem + 0.9vw); }
   @media (min-width: 1200px) {
-    h2, .h2 {
+    
+    h2,
+    .h2 {
       font-size: 2rem; } }
 
-h3, .h3 {
+
+h3,
+.h3 {
   font-size: calc(1.3rem + 0.6vw); }
   @media (min-width: 1200px) {
-    h3, .h3 {
+    
+    h3,
+    .h3 {
       font-size: 1.75rem; } }
 
-h4, .h4 {
+
+h4,
+.h4 {
   font-size: calc(1.275rem + 0.3vw); }
   @media (min-width: 1200px) {
-    h4, .h4 {
+    
+    h4,
+    .h4 {
       font-size: 1.5rem; } }
 
-h5, .h5 {
+
+h5,
+.h5 {
   font-size: 1.25rem; }
 
-h6, .h6 {
+
+h6,
+.h6 {
   font-size: 1rem; }
 
 p {
@@ -644,7 +894,7 @@ progress {
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1320px; } }
+    max-width: 1290px; } }
 
 :root {
   --bs-breakpoint-xs: 0;
@@ -9274,150 +9524,3 @@ textarea.form-control-lg {
     display: inline-flex !important; }
   .d-print-none {
     display: none !important; } }
-
-html {
-  /* This defines what 1rem is  */
-  font-size: 62.5%;
-  /* 1 rem = 10px; 10px/16px = 62.5% */ }
-
-body {
-  box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 3rem;
-  color: #23262d;
-  background-color: #fff; }
-
-.heading-secondary {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 4.8rem;
-  font-weight: 700;
-  line-height: 6rem;
-  text-transform: capitalize; }
-
-.heading-tertiary {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3rem; }
-
-.section-title {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 1.8rem;
-  font-weight: 700;
-  line-height: 2.7px;
-  letter-spacing: 4px;
-  text-transform: uppercase;
-  color: #d9a14c;
-  position: relative; }
-
-.section-padding {
-  padding: 12rem 0; }
-
-.btn, .btn:link, .btn:visited {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 3.2rem;
-  letter-spacing: 1.28px;
-  text-transform: uppercase;
-  text-decoration: none;
-  display: inline-block;
-  transition: all 0.2s;
-  position: relative;
-  border: none;
-  cursor: pointer; }
-
-.btn-primary {
-  background-color: #d9a14c !important;
-  padding: 1.4rem 2.5rem; }
-  .btn-primary:hover {
-    background-color: #ff9205 !important; }
-
-.section-about {
-  background-color: #f4f4f4;
-  padding-top: 12rem;
-  padding-bottom: 12rem; }
-  .section-about .about__image--box {
-    width: 100%; }
-  .section-about .project-countdown {
-    position: absolute;
-    bottom: 3rem;
-    left: 4rem;
-    text-align: center;
-    padding: 2.6rem;
-    background-color: #f0e8db; }
-    .section-about .project-countdown__box {
-      background-color: #d9a14c;
-      padding: 2rem 3rem;
-      color: #fff; }
-      .section-about .project-countdown__box > div:first-of-type {
-        font-family: "Rajdhani", sans-serif;
-        font-size: 4.8rem;
-        font-weight: 700;
-        line-height: 6rem;
-        text-transform: capitalize; }
-  .section-about .section-title::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -20px;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 1px;
-    background-color: #d9a14c; }
-  .section-about p {
-    padding-top: 2rem; }
-  .section-about__details {
-    margin-left: 4rem;
-    margin-top: 4rem;
-    position: relative; }
-    .section-about__details .svg-line {
-      position: absolute;
-      height: 100%; }
-    .section-about__details div {
-      padding-left: 4.5rem; }
-
-.section-service {
-  background-color: #23262d;
-  position: relative;
-  background-image: url(../../img//service-bg.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-size: 80%; }
-  .section-service .service-list__box {
-    padding-top: 10rem;
-    color: #fff; }
-    .section-service .service-list__box-gap {
-      gap: 14rem; }
-    .section-service .service-list__box p {
-      opacity: 0.72;
-      padding-top: 2rem; }
-    .section-service .service-list__box a {
-      font-family: "Rajdhani", sans-serif;
-      font-weight: 700;
-      text-decoration: none;
-      text-transform: uppercase;
-      color: #fff;
-      gap: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 4rem; }
-      .section-service .service-list__box a:hover .lucide-arrow-right {
-        transform: translateX(5px);
-        transition: transform 0.3s ease; }
-
-.section-gallery .gallery-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: end; }
-
-.section-gallery .gallery {
-  padding-top: 5.2rem; }
-  .section-gallery .gallery__img {
-    width: 100%;
-    height: 39rem;
-    object-fit: cover;
-    display: block; }
