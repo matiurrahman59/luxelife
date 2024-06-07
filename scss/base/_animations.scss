@@ -1,0 +1,19 @@
+@keyframes loop-scroll-to-left {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translate(-100%);
+  }
+}
+
+@keyframes loop-scroll-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
