@@ -24,6 +24,18 @@ p {
   margin-bottom: 0 !important;
 }
 
+ul,
+li {
+  list-style: none;
+  padding: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  font: inherit !important;
+  color: inherit !important;
+}
+
 img {
   width: 100% !important;
   object-fit: cover !important;

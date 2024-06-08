@@ -17,3 +17,9 @@
     transform: translate(0);
   }
 }
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 30px rgba($color-white, 0);
+  }
+}
