@@ -2,3 +2,22 @@
   height: 4rem;
   width: 13.9rem;
 }
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: $color-black;
+
+  img {
+    height: 3rem;
+    width: 3rem;
+  }
+
+  span {
+    font-size: 3rem;
+
+    line-height: 4rem;
+    text-transform: capitalize;
+  }
+}

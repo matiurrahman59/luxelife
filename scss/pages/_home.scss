@@ -1,3 +1,85 @@
+.section-hero {
+  .hero-details-area {
+    height: 78rem;
+    display: flex;
+    align-items: center;
+    color: $color-white;
+
+    background-image: linear-gradient(
+        91deg,
+        #000 0.47%,
+        rgba(0, 0, 0, 0) 99.58%
+      ),
+      url('../../assets/images/hero-img.png');
+
+    .hero-details {
+      padding: 0 8rem 0 12rem;
+
+      .hero-description {
+        max-width: 57rem;
+        padding-top: 2rem;
+      }
+
+      .hero-footer-content {
+        padding-top: 4.2rem;
+
+        display: flex;
+        align-items: center;
+        gap: 5.3rem;
+
+        .customer-info {
+          display: flex;
+          align-items: center;
+          gap: 3rem;
+
+          .customer-image-wrapper {
+            display: flex;
+            align-items: center;
+
+            img {
+              height: 5.4rem;
+              width: 5.4rem;
+              border: 2px solid $color-white;
+              border-radius: 50%;
+              margin-right: -1.2rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .hero-carousel-area {
+    padding: 6rem 0 4.6rem 8rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .filter-button-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+
+      button {
+        text-transform: capitalize;
+      }
+    }
+
+    .carousel-image-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      overflow-x: hidden !important;
+
+      .carousel-image {
+        max-height: 47rem;
+        min-width: 30rem;
+      }
+    }
+  }
+}
+
 .section-about {
   background-color: $color-secondary;
   padding-top: 12rem;
@@ -138,8 +220,9 @@
       }
 
       .service-button {
-        font-size: 1.6rem !important;
         text-transform: uppercase;
+        font-family: $font-primary;
+        font-weight: 700;
         color: $color-white;
         gap: 1rem;
         display: flex;
@@ -448,5 +531,68 @@
 
   button {
     margin-top: 4rem;
+  }
+}
+
+.section-testimonial {
+  background-color: $color-secondary;
+  margin-top: 12rem;
+
+  .section-header {
+    flex-direction: column;
+    align-items: normal;
+    gap: 5rem;
+  }
+
+  .testimonial-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+  }
+
+  .testimonial-card {
+    padding: 4rem;
+    background-color: $color-white;
+    min-width: 41rem;
+
+    &__image {
+      height: 7.6rem;
+      width: 7.6rem;
+    }
+
+    .testimonial-card__details {
+      .user-details {
+        padding-top: 2rem;
+
+        .paragraph {
+          padding-top: 6px;
+          color: $color-grey-dark;
+        }
+
+        .ratings {
+          padding-top: 1rem;
+          font-size: 1.4rem;
+          color: $color-primary-dark;
+        }
+      }
+
+      .testimonial-card__content {
+        padding-top: 2rem;
+        color: $color-grey-dark;
+      }
+    }
+  }
+
+  .partnership-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+
+    .logo-box {
+      max-width: 262px;
+    }
   }
 }

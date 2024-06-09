@@ -28,15 +28,17 @@ ul,
 li {
   list-style: none;
   padding: 0 !important;
+  margin: 0 !important;
 }
 
 a {
   text-decoration: none !important;
-  font: inherit !important;
-  color: inherit !important;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
 }
 
 img {
-  width: 100% !important;
-  object-fit: cover !important;
+  width: 100%;
+  object-fit: cover;
 }
