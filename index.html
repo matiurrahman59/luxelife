@@ -13,6 +13,25 @@
       rel="stylesheet"
     />
 
+    <!-- owl carousel css link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script defer src="assets/js/slick-carousel.js"></script>
+
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Luxelife</title>
   </head>
@@ -123,7 +142,7 @@
                 </button>
               </div>
 
-              <div class="carousel-image-wrapper">
+              <div class="carousel-image-wrapper hero-carousel">
                 <div class="carousel-image">
                   <img
                     src="./assets/images/hero-carousel-img-1.png"
@@ -155,6 +174,15 @@
                   />
                 </div>
               </div>
+
+              <!-- <div class="carousel-control-wrapper">
+                <button class="carousel-left-control">
+                  <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="carousel-left-control">
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+              </div> -->
             </div>
           </div>
         </div>
@@ -857,14 +885,14 @@
                     Unleash the Potential of your Interiors
                   </h2>
                 </div>
-                <div class="carousel-control-wrapper">
+                <!-- <div class="carousel-control-wrapper">
                   <button class="carousel-left-control">
                     <i class="fa-solid fa-arrow-left"></i>
                   </button>
                   <button class="carousel-left-control">
                     <i class="fa-solid fa-arrow-right"></i>
                   </button>
-                </div>
+                </div> -->
               </div>
             </div>
             <div class="col-8">
@@ -928,7 +956,7 @@
                 <div class="testimonial-card">
                   <div class="testimonial-card__image">
                     <img
-                      src="./assets/images/testimonial-user-img-1.png"
+                      src="./assets/images/testimonial-user-img-3.png"
                       alt="testimonial image"
                     />
                   </div>
@@ -962,10 +990,35 @@
                   </div>
                   <div class="testimonial-card__details">
                     <div class="user-details">
-                      <h4 class="heading-tertiary">
-                        Designing Spaces for Every <br />
-                        Taste and Budget
-                      </h4>
+                      <h4 class="heading-tertiary">Savannah Nguyen</h4>
+                      <p class="paragraph">Marketing Coordinator</p>
+                      <div class="ratings">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                    </div>
+                    <div class="testimonial-card__content">
+                      <p class="paragraph">
+                        It is a long established fact that a reader will a be
+                        distracted by the readable content of a page when
+                        looking at its layout time to close.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="testimonial-card">
+                  <div class="testimonial-card__image">
+                    <img
+                      src="./assets/images/testimonial-user-img-2.png"
+                      alt="testimonial image"
+                    />
+                  </div>
+                  <div class="testimonial-card__details">
+                    <div class="user-details">
+                      <h4 class="heading-tertiary">Jenny Wilson</h4>
                       <p class="paragraph">Nursing Assistant</p>
                       <div class="ratings">
                         <i class="fa-solid fa-star"></i>
@@ -987,17 +1040,14 @@
                 <div class="testimonial-card">
                   <div class="testimonial-card__image">
                     <img
-                      src="./assets/images/testimonial-user-img-1.png"
+                      src="./assets/images/testimonial-user-img-3.png"
                       alt="testimonial image"
                     />
                   </div>
                   <div class="testimonial-card__details">
                     <div class="user-details">
-                      <h4 class="heading-tertiary">
-                        Designing Spaces for Every <br />
-                        Taste and Budget
-                      </h4>
-                      <p class="paragraph">Nursing Assistant</p>
+                      <h4 class="heading-tertiary">Cameron Williamson</h4>
+                      <p class="paragraph">Dog Trainer</p>
                       <div class="ratings">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -1067,66 +1117,117 @@
                 Taste and Budget
               </h2>
             </div>
-            <div class="carousel-control-wrapper">
+            <!-- <div class="carousel-control-wrapper">
               <button class="carousel-left-control">
                 <i class="fa-solid fa-arrow-left"></i>
               </button>
               <button class="carousel-left-control">
                 <i class="fa-solid fa-arrow-right"></i>
               </button>
-            </div>
+            </div> -->
           </div>
 
           <div class="blog-list">
             <div class="row">
-              <div class="col">
-                <div class="blog-card">
-                  <div class="blog-card__image">
-                    <img src="./assets/images/blog-img-1.png" alt="blog card" />
-                  </div>
-                  <div class="blog-card__details">
-                    <div class="blog-card__title">
-                      <h3 class="heading-tertiary">
-                        Inspiring Designs for Inspired Where Innovation Meets
-                      </h3>
+              <div class="blog-carousel">
+                <div class="col">
+                  <div class="blog-card">
+                    <div class="blog-card__image">
+                      <img
+                        src="./assets/images/blog-img-1.png"
+                        alt="blog card"
+                      />
                     </div>
-                    <button class="btn-primary btn-primary-inverted">
-                      Read more <i class="fa-solid fa-plus"></i>
-                    </button>
+                    <div class="blog-card__details">
+                      <div class="blog-card__title">
+                        <h3 class="heading-tertiary">
+                          Inspiring Designs for Inspired Where Innovation Meets
+                        </h3>
+                      </div>
+                      <button class="btn-primary btn-primary-inverted">
+                        Read more <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="blog-card">
-                  <div class="blog-card__image">
-                    <img src="./assets/images/blog-img-2.png" alt="blog card" />
-                  </div>
-                  <div class="blog-card__details">
-                    <div class="blog-card__title">
-                      <h3 class="heading-tertiary">
-                        Inspiring Designs for Inspired Where Innovation Meets
-                      </h3>
+                <div class="col">
+                  <div class="blog-card">
+                    <div class="blog-card__image">
+                      <img
+                        src="./assets/images/blog-img-2.png"
+                        alt="blog card"
+                      />
                     </div>
-                    <button class="btn-primary btn-primary-inverted">
-                      Read more <i class="fa-solid fa-plus"></i>
-                    </button>
+                    <div class="blog-card__details">
+                      <div class="blog-card__title">
+                        <h3 class="heading-tertiary">
+                          Inspiring Designs for Inspired Where Innovation Meets
+                        </h3>
+                      </div>
+                      <button class="btn-primary btn-primary-inverted">
+                        Read more <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="blog-card">
-                  <div class="blog-card__image">
-                    <img src="./assets/images/blog-img-3.png" alt="blog card" />
-                  </div>
-                  <div class="blog-card__details">
-                    <div class="blog-card__title">
-                      <h3 class="heading-tertiary">
-                        Inspiring Designs for Inspired Where Innovation Meets
-                      </h3>
+                <div class="col">
+                  <div class="blog-card">
+                    <div class="blog-card__image">
+                      <img
+                        src="./assets/images/blog-img-3.png"
+                        alt="blog card"
+                      />
                     </div>
-                    <button class="btn-primary btn-primary-inverted">
-                      Read more <i class="fa-solid fa-plus"></i>
-                    </button>
+                    <div class="blog-card__details">
+                      <div class="blog-card__title">
+                        <h3 class="heading-tertiary">
+                          Inspiring Designs for Inspired Where Innovation Meets
+                        </h3>
+                      </div>
+                      <button class="btn-primary btn-primary-inverted">
+                        Read more <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="blog-card">
+                    <div class="blog-card__image">
+                      <img
+                        src="./assets/images/blog-img-1.png"
+                        alt="blog card"
+                      />
+                    </div>
+                    <div class="blog-card__details">
+                      <div class="blog-card__title">
+                        <h3 class="heading-tertiary">
+                          Inspiring Designs for Inspired Where Innovation Meets
+                        </h3>
+                      </div>
+                      <button class="btn-primary btn-primary-inverted">
+                        Read more <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="blog-card">
+                    <div class="blog-card__image">
+                      <img
+                        src="./assets/images/blog-img-2.png"
+                        alt="blog card"
+                      />
+                    </div>
+                    <div class="blog-card__details">
+                      <div class="blog-card__title">
+                        <h3 class="heading-tertiary">
+                          Inspiring Designs for Inspired Where Innovation Meets
+                        </h3>
+                      </div>
+                      <button class="btn-primary btn-primary-inverted">
+                        Read more <i class="fa-solid fa-plus"></i>
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1343,5 +1444,13 @@
         </div>
       </div>
     </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </body>
 </html>

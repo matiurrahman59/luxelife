@@ -50,7 +50,9 @@
   }
 
   .hero-carousel-area {
-    padding: 6rem 0 4.6rem 8rem;
+    margin: 6rem 0 4.6rem 8rem;
+    // overflow-x: hidden !important;
+    // overflow-y: visible !important;
 
     display: flex;
     flex-direction: column;
@@ -70,11 +72,10 @@
       display: flex;
       align-items: center;
       gap: 3rem;
-      overflow-x: hidden !important;
 
       .carousel-image {
-        max-height: 47rem;
-        min-width: 30rem;
+        height: 47rem;
+        min-width: 30rem !important;
       }
     }
   }
@@ -527,10 +528,10 @@
       border: 1px solid $color-grey-light-1;
       padding: 4rem;
     }
-  }
 
-  button {
-    margin-top: 4rem;
+    button {
+      margin-top: 4rem;
+    }
   }
 }
 
