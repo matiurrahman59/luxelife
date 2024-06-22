@@ -116,4 +116,9 @@
       color: $color-white;
     }
   }
+
+  .control-active {
+    background-color: $color-primary;
+    color: $color-white;
+  }
 }

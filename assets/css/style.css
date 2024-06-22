@@ -35,21 +35,6 @@ body {
   overflow-x: hidden;
 }
 
-h1, .h1,
-h2,
-.h2,
-h3,
-.h3,
-h4,
-.h4,
-h5,
-.h5,
-h6,
-.h6,
-p {
-  margin: 0;
-}
-
 ul,
 li {
   list-style: none;
@@ -66,7 +51,7 @@ a {
 
 img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   display: block;
 }
@@ -240,7 +225,7 @@ img {
   padding: 12rem 0;
 }
 
-.heading-sm-after-line::after {
+.sub-title-line::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -251,40 +236,61 @@ img {
   background-color: #d9a14c;
 }
 
-.form-input {
+.sub-title-line-both-side::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -25px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 1px;
+  background-color: #d9a14c;
+}
+.sub-title-line-both-side::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 1px;
+  background-color: #d9a14c;
+}
+
+.py-120 {
+  padding: 12rem 0;
+}
+
+.pt-50 {
+  padding-top: 5rem;
+}
+
+.mt-60 {
+  margin-top: 6rem;
+}
+
+.blog-card {
+  min-width: 410px;
+}
+.blog-card:hover {
+  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
+}
+.blog-card:hover .blog-card__details {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #d9a14c;
+}
+.blog-card__image {
+  height: 236px;
   width: 100%;
-  padding: 1.5rem 2rem;
-  border: none;
 }
-.form-input, .form-input::placeholder {
-  font-family: "Rubik", sans-serif;
-  font-size: 1.6rem;
-  font-weight: 400;
-  line-height: 3rem;
+.blog-card__details {
+  border: 1px solid #e3e3e3;
+  padding: 4rem;
 }
-.form-input:focus, .form-input:active {
-  outline: none;
-}
-
-.brand-logo {
-  height: 4rem;
-  width: 13.9rem;
-}
-
-.company-logo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  color: #23262d;
-}
-.company-logo img {
-  height: 3rem;
-  width: 3rem;
-}
-.company-logo span {
-  font-size: 3rem;
-  line-height: 4rem;
-  text-transform: capitalize;
+.blog-card button {
+  margin-top: 4rem;
 }
 
 .btn-primary, .btn-primary:link, .btn-primary:visited {
@@ -385,18 +391,114 @@ img {
   background-color: #d9a14c;
   color: #fff;
 }
-
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
+.carousel-control-wrapper .control-active {
+  background-color: #d9a14c;
+  color: #fff;
 }
-.section-header .section-content {
+
+.form-input {
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border: none;
+}
+.form-input, .form-input::placeholder {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.form-input:focus, .form-input:active {
+  outline: none;
+}
+
+.brand-logo {
+  height: 4rem;
+  width: 13.9rem;
+}
+
+.company-logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: #23262d;
+}
+.company-logo img {
+  height: 3rem;
+  width: 3rem;
+}
+.company-logo span {
+  font-size: 3rem;
+  line-height: 4rem;
+  text-transform: capitalize;
+}
+
+.product-card {
+  height: 57.7rem;
+  border: 1px solid #f8ecdd;
+  overflow: hidden;
+}
+.product-card:hover .bookmark-icon__wrapper {
+  opacity: 1;
+}
+.product-card:hover .product-card__details {
+  transform: translateY(-35%);
+}
+.product-card:hover .product-card__button {
+  display: flex;
+}
+.product-card__image {
+  height: 41.1rem;
+  background-color: #f8ecdd;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.product-card__image .product-image {
+  width: 202px;
+}
+.product-card__image .bookmark-icon__wrapper {
+  position: absolute;
+  right: 2rem;
+  top: 1.3rem;
+  opacity: 0;
+  transition: all 0.3s;
+  height: 4.4rem;
+  width: 4.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+}
+.product-card__details {
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: #fff;
+  transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-.section-header .heading-sm {
+.product-card__details .product-card__price span {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+.product-card__details .product-card__ratings {
+  font-size: 1.6rem;
+  color: #d9a14c;
+}
+.product-card__details .product-card__ratings i:not(:last-child) {
+  margin-right: 4px;
+}
+.product-card__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.title-area .sub-title {
   display: inline-flex;
   font-size: 1.8rem;
   line-height: 2.7px;
@@ -404,6 +506,87 @@ img {
   text-transform: uppercase;
   color: #d9a14c;
   position: relative;
+}
+.title-area .sec-title {
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+  text-transform: capitalize;
+  margin-top: 1rem;
+}
+.title-area .sec-text {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 400;
+  margin-top: 2rem;
+}
+
+.service-category-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.service-category-wrapper .service-icon {
+  height: 6.5rem;
+  width: 6.5rem;
+  display: flex;
+  justify-content: center;
+}
+.service-category-wrapper .service-icon i {
+  font-size: 4rem;
+}
+.service-category-wrapper .service-details {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.service-category-wrapper .service-details p {
+  opacity: 0.72;
+}
+.service-category-wrapper .service-button {
+  text-transform: uppercase;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 700;
+  color: #fff;
+  gap: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4rem;
+}
+.service-category-wrapper .service-button i {
+  transition: all 0.3s ease;
+}
+.service-category-wrapper .service-button:hover i {
+  color: #d9a14c;
+  transform: translatex(5px);
+}
+
+.testimonial-card {
+  padding: 4rem;
+  background-color: #fff;
+  min-width: 41rem;
+}
+.testimonial-card__image {
+  height: 7.6rem;
+  width: 7.6rem;
+}
+.testimonial-card .testimonial-card__details .user-details {
+  padding-top: 2rem;
+}
+.testimonial-card .testimonial-card__details .user-details .paragraph {
+  padding-top: 6px;
+  color: #616670;
+}
+.testimonial-card .testimonial-card__details .user-details .ratings {
+  padding-top: 1rem;
+  font-size: 1.4rem;
+  color: #ff9205;
+}
+.testimonial-card .testimonial-card__details .testimonial-card__content {
+  padding-top: 2rem;
+  color: #616670;
 }
 
 .section-footer {
@@ -695,8 +878,6 @@ img {
 
 .section-about {
   background-color: #f4f4f4;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
 }
 .section-about .project-countdown {
   position: absolute;
@@ -722,13 +903,12 @@ img {
   font-weight: 400;
   line-height: 3rem;
 }
-.section-about__details-wrapper {
-  padding-left: 4rem;
-}
 .section-about__details {
-  margin-left: 4rem;
+  margin-left: 8rem;
   margin-top: 4rem;
   position: relative;
+  display: grid;
+  gap: 3rem;
 }
 .section-about__details .details-line {
   position: absolute;
@@ -757,6 +937,18 @@ img {
   border-radius: 100%;
   background-color: #d9a14c;
   transform: translate(-50%, 50%);
+}
+.section-about__details .about-details .title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+}
+.section-about__details .about-details .text {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.6rem;
+  line-height: 3rem;
+  font-weight: 400;
 }
 
 .section-service {
@@ -797,43 +989,6 @@ img {
 .section-service .service-list__box-gap {
   gap: 14rem;
 }
-.section-service .service-list__box .service-category-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.section-service .service-list__box .service-category-wrapper .service-icon {
-  height: 6.5rem;
-  width: 6.5rem;
-  display: flex;
-  justify-content: center;
-}
-.section-service .service-list__box .service-category-wrapper .service-details {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-.section-service .service-list__box .service-category-wrapper .service-details p {
-  opacity: 0.72;
-}
-.section-service .service-list__box .service-category-wrapper .service-button {
-  text-transform: uppercase;
-  font-family: "Rajdhani", sans-serif;
-  font-weight: 700;
-  color: #fff;
-  gap: 1rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4rem;
-}
-.section-service .service-list__box .service-category-wrapper .service-button i {
-  transition: all 0.3s ease;
-}
-.section-service .service-list__box .service-category-wrapper .service-button:hover i {
-  color: #d9a14c;
-  transform: translatex(5px);
-}
 
 .section-gallery .gallery {
   padding-top: 5.2rem;
@@ -872,72 +1027,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.section-product .product-card {
-  height: 57.7rem;
-  border: 1px solid #f8ecdd;
-  overflow: hidden;
-}
-.section-product .product-card:hover .bookmark-icon__wrapper {
-  opacity: 1;
-}
-.section-product .product-card:hover .product-card__details {
-  transform: translateY(-35%);
-}
-.section-product .product-card:hover .product-card__button {
-  display: flex;
-}
-.section-product .product-card__image {
-  height: 41.1rem;
-  background-color: #f8ecdd;
-  display: grid;
-  place-items: center;
-  position: relative;
-}
-.section-product .product-card__image .product-image {
-  width: 202px;
-}
-.section-product .product-card__image .bookmark-icon__wrapper {
-  position: absolute;
-  right: 2rem;
-  top: 1.3rem;
-  opacity: 0;
-  transition: all 0.3s;
-  height: 4.4rem;
-  width: 4.4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 100%;
-}
-.section-product .product-card__details {
-  padding-top: 3rem;
-  padding-bottom: 4rem;
-  background-color: #fff;
-  transition: all 0.3s ease;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.section-product .product-card__details .product-card__price span {
-  font-family: "Rajdhani", sans-serif;
-  font-size: 2.4rem;
-  font-weight: 700;
-  line-height: 3rem;
-}
-.section-product .product-card__details .product-card__ratings {
-  font-size: 1.6rem;
-  color: #d9a14c;
-}
-.section-product .product-card__details .product-card__ratings i:not(:last-child) {
-  margin-right: 4px;
-}
-.section-product .product-card__button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 2rem;
 }
 
 .section-infinite-scroll {
@@ -991,6 +1080,32 @@ img {
   text-shadow: -2px -2px 0 #23262d, 2px -2px 0 #23262d, -2px 2px 0 #23262d, 2px 2px 0 #23262d;
 }
 
+.section-testimonial {
+  background-color: #f4f4f4;
+  margin-top: 12rem;
+}
+.section-testimonial .section-header {
+  flex-direction: column;
+  align-items: normal;
+  gap: 5rem;
+}
+.section-testimonial .testimonial-carousel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3rem;
+  overflow: hidden;
+}
+.section-testimonial .partnership-logo-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10rem;
+}
+.section-testimonial .partnership-logo-wrapper .logo-box {
+  max-width: 262px;
+}
+
 .section-message {
   padding-bottom: 10rem;
   position: relative;
@@ -1030,81 +1145,6 @@ img {
 }
 .section-message input:focus, .section-message input:active {
   outline: none;
-}
-
-.section-blog .blog-list {
-  margin-top: 6rem;
-}
-.section-blog .blog-card:hover {
-  box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-}
-.section-blog .blog-card:hover .blog-card__details {
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 1px solid #d9a14c;
-}
-.section-blog .blog-card__image {
-  height: 236px;
-  width: 100%;
-}
-.section-blog .blog-card__details {
-  border: 1px solid #e3e3e3;
-  padding: 4rem;
-}
-.section-blog .blog-card button {
-  margin-top: 4rem;
-}
-
-.section-testimonial {
-  background-color: #f4f4f4;
-  margin-top: 12rem;
-}
-.section-testimonial .section-header {
-  flex-direction: column;
-  align-items: normal;
-  gap: 5rem;
-}
-.section-testimonial .testimonial-carousel {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 3rem;
-  overflow: hidden;
-}
-.section-testimonial .testimonial-card {
-  padding: 4rem;
-  background-color: #fff;
-  min-width: 41rem;
-}
-.section-testimonial .testimonial-card__image {
-  height: 7.6rem;
-  width: 7.6rem;
-}
-.section-testimonial .testimonial-card .testimonial-card__details .user-details {
-  padding-top: 2rem;
-}
-.section-testimonial .testimonial-card .testimonial-card__details .user-details .paragraph {
-  padding-top: 6px;
-  color: #616670;
-}
-.section-testimonial .testimonial-card .testimonial-card__details .user-details .ratings {
-  padding-top: 1rem;
-  font-size: 1.4rem;
-  color: #ff9205;
-}
-.section-testimonial .testimonial-card .testimonial-card__details .testimonial-card__content {
-  padding-top: 2rem;
-  color: #616670;
-}
-.section-testimonial .partnership-logo-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  margin-top: 10rem;
-}
-.section-testimonial .partnership-logo-wrapper .logo-box {
-  max-width: 262px;
 }
 
 /*!

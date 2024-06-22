@@ -1,0 +1,50 @@
+.service-category-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .service-icon {
+    height: 6.5rem;
+    width: 6.5rem;
+
+    display: flex;
+    justify-content: center;
+
+    i {
+      font-size: 4rem;
+    }
+  }
+
+  .service-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    p {
+      opacity: 0.72;
+    }
+  }
+
+  .service-button {
+    text-transform: uppercase;
+    font-family: $font-primary;
+    font-weight: 700;
+    color: $color-white;
+    gap: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+
+    i {
+      transition: all 0.3s ease;
+    }
+
+    &:hover {
+      i {
+        color: $color-primary;
+        transform: translatex(5px);
+      }
+    }
+  }
+}

@@ -1,15 +1,5 @@
-.section-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-
-  .section-content {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  .heading-sm {
+.title-area {
+  .sub-title {
     display: inline-flex;
     font-size: 1.8rem;
     line-height: 2.7px;
@@ -18,4 +8,24 @@
     color: $color-primary;
     position: relative;
   }
+
+  .sec-title {
+    font-size: 4.8rem;
+    font-weight: 700;
+    line-height: 6rem;
+    text-transform: capitalize;
+    margin-top: 1rem;
+  }
+
+  .sec-text {
+    font-family: $font-display;
+    font-size: 1.6rem;
+    line-height: 3rem;
+    font-weight: 400;
+    margin-top: 2rem;
+  }
 }
+
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: end;

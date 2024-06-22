@@ -83,8 +83,6 @@
 
 .section-about {
   background-color: $color-secondary;
-  padding-top: 12rem;
-  padding-bottom: 12rem;
 
   .project-countdown {
     position: absolute;
@@ -114,13 +112,13 @@
     }
   }
 
-  &__details-wrapper {
-    padding-left: 4rem;
-  }
   &__details {
-    margin-left: 4rem;
+    margin-left: 8rem;
     margin-top: 4rem;
     position: relative;
+
+    display: grid;
+    gap: 3rem;
 
     .details-line {
       position: absolute;
@@ -150,6 +148,22 @@
         border-radius: 100%;
         background-color: $color-primary;
         transform: translate(-50%, 50%);
+      }
+    }
+
+    .about-details {
+      .title {
+        font-size: 2.4rem;
+        font-weight: 700;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+      }
+
+      .text {
+        font-family: $font-display;
+        font-size: 1.6rem;
+        line-height: 3rem;
+        font-weight: 400;
       }
     }
   }
@@ -195,53 +209,6 @@
 
     &-gap {
       gap: 14rem;
-    }
-
-    .service-category-wrapper {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      .service-icon {
-        height: 6.5rem;
-        width: 6.5rem;
-
-        display: flex;
-        justify-content: center;
-      }
-
-      .service-details {
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-
-        p {
-          opacity: 0.72;
-        }
-      }
-
-      .service-button {
-        text-transform: uppercase;
-        font-family: $font-primary;
-        font-weight: 700;
-        color: $color-white;
-        gap: 1rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 4rem;
-
-        i {
-          transition: all 0.3s ease;
-        }
-
-        &:hover {
-          i {
-            color: $color-primary;
-            transform: translatex(5px);
-          }
-        }
-      }
     }
   }
 }
@@ -299,89 +266,6 @@
       display: flex;
       align-items: center;
       justify-content: center;
-    }
-  }
-}
-
-.section-product {
-  .product-card {
-    height: 57.7rem;
-    border: 1px solid $color-primary-light;
-    overflow: hidden;
-
-    &:hover {
-      .bookmark-icon__wrapper {
-        opacity: 1;
-      }
-
-      .product-card__details {
-        transform: translateY(-35%);
-      }
-
-      .product-card__button {
-        display: flex;
-      }
-    }
-
-    &__image {
-      height: 41.1rem;
-      background-color: $color-primary-light;
-      display: grid;
-      place-items: center;
-      position: relative;
-
-      .product-image {
-        width: 202px;
-      }
-
-      .bookmark-icon__wrapper {
-        position: absolute;
-        right: 2rem;
-        top: 1.3rem;
-        opacity: 0;
-        transition: all 0.3s;
-
-        height: 4.4rem;
-        width: 4.4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 100%;
-      }
-    }
-
-    &__details {
-      padding-top: 3rem;
-      padding-bottom: 4rem;
-      background-color: $color-white;
-      transition: all 0.3s ease;
-
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-
-      .product-card__price span {
-        font-family: $font-primary;
-        font-size: 2.4rem;
-        font-weight: 700;
-        line-height: 3rem;
-      }
-
-      .product-card__ratings {
-        font-size: 1.6rem;
-        color: $color-primary;
-
-        & i:not(:last-child) {
-          margin-right: 4px;
-        }
-      }
-    }
-
-    &__button {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding-top: 2rem;
     }
   }
 }
@@ -455,6 +339,36 @@
   }
 }
 
+.section-testimonial {
+  background-color: $color-secondary;
+  margin-top: 12rem;
+
+  .section-header {
+    flex-direction: column;
+    align-items: normal;
+    gap: 5rem;
+  }
+
+  .testimonial-carousel {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    overflow: hidden;
+  }
+
+  .partnership-logo-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10rem;
+
+    .logo-box {
+      max-width: 262px;
+    }
+  }
+}
+
 .section-message {
   padding-bottom: 10rem;
   position: relative;
@@ -500,100 +414,6 @@
     &:focus,
     &:active {
       outline: none;
-    }
-  }
-}
-
-.section-blog {
-  .blog-list {
-    margin-top: 6rem;
-  }
-  .blog-card {
-    &:hover {
-      box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-      .blog-card__details {
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        border-bottom: 1px solid $color-primary;
-      }
-    }
-
-    &__image {
-      height: 236px;
-      width: 100%;
-    }
-
-    &__details {
-      border: 1px solid $color-grey-light-1;
-      padding: 4rem;
-    }
-
-    button {
-      margin-top: 4rem;
-    }
-  }
-}
-
-.section-testimonial {
-  background-color: $color-secondary;
-  margin-top: 12rem;
-
-  .section-header {
-    flex-direction: column;
-    align-items: normal;
-    gap: 5rem;
-  }
-
-  .testimonial-carousel {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 3rem;
-    overflow: hidden;
-  }
-
-  .testimonial-card {
-    padding: 4rem;
-    background-color: $color-white;
-    min-width: 41rem;
-
-    &__image {
-      height: 7.6rem;
-      width: 7.6rem;
-    }
-
-    .testimonial-card__details {
-      .user-details {
-        padding-top: 2rem;
-
-        .paragraph {
-          padding-top: 6px;
-          color: $color-grey-dark;
-        }
-
-        .ratings {
-          padding-top: 1rem;
-          font-size: 1.4rem;
-          color: $color-primary-dark;
-        }
-      }
-
-      .testimonial-card__content {
-        padding-top: 2rem;
-        color: $color-grey-dark;
-      }
-    }
-  }
-
-  .partnership-logo-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin-top: 10rem;
-
-    .logo-box {
-      max-width: 262px;
     }
   }
 }

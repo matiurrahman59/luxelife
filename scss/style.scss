@@ -15,10 +15,14 @@ $container-max-widths: (
 @import 'base/typography';
 @import 'base/utilities';
 
+@import 'components/blogCard';
+@import 'components/button';
 @import 'components/_formInput';
 @import 'components/logo';
-@import 'components/button';
+@import 'components/productCard';
 @import 'components/sectionHeader';
+@import 'components/serviceCard';
+@import 'components/testimonialCard';
 
 @import 'layout/footer';
 @import 'layout/header';

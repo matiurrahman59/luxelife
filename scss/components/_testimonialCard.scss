@@ -1,0 +1,32 @@
+.testimonial-card {
+  padding: 4rem;
+  background-color: $color-white;
+  min-width: 41rem;
+
+  &__image {
+    height: 7.6rem;
+    width: 7.6rem;
+  }
+
+  .testimonial-card__details {
+    .user-details {
+      padding-top: 2rem;
+
+      .paragraph {
+        padding-top: 6px;
+        color: $color-grey-dark;
+      }
+
+      .ratings {
+        padding-top: 1rem;
+        font-size: 1.4rem;
+        color: $color-primary-dark;
+      }
+    }
+
+    .testimonial-card__content {
+      padding-top: 2rem;
+      color: $color-grey-dark;
+    }
+  }
+}

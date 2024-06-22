@@ -2,7 +2,7 @@
   padding: 12rem 0;
 }
 
-.heading-sm-after-line::after {
+.sub-title-line::after {
   content: '';
   position: absolute;
   top: 50%;
@@ -11,4 +11,40 @@
   width: 20px;
   height: 1px;
   background-color: $color-primary;
+}
+
+.sub-title-line-both-side {
+  &::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -25px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 1px;
+    background-color: $color-primary;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 1px;
+    background-color: $color-primary;
+  }
+}
+
+.py-120 {
+  padding: 12rem 0;
+}
+
+.pt-50 {
+  padding-top: 5rem;
+}
+
+.mt-60 {
+  margin-top: 6rem;
 }
