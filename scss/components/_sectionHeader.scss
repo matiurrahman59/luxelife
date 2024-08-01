@@ -1,31 +1,33 @@
-.title-area {
-  .sub-title {
-    display: inline-flex;
-    font-size: 1.8rem;
-    line-height: 2.7px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: $color-primary;
-    position: relative;
-  }
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
 
-  .sec-title {
-    font-size: 4.8rem;
-    font-weight: 700;
-    line-height: 6rem;
-    text-transform: capitalize;
-    margin-top: 1rem;
-  }
+  .title-area {
+    .sub-title {
+      display: inline-flex;
+      font-size: 1.8rem;
+      line-height: 2.7px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: $color-primary;
+      position: relative;
+    }
 
-  .sec-text {
-    font-family: $font-display;
-    font-size: 1.6rem;
-    line-height: 3rem;
-    font-weight: 400;
-    margin-top: 2rem;
+    .sec-title {
+      font-size: 4.8rem;
+      font-weight: 700;
+      line-height: 6rem;
+      text-transform: capitalize;
+      margin-top: 1rem;
+    }
+
+    .sec-text {
+      font-family: $font-display;
+      font-size: 1.6rem;
+      line-height: 3rem;
+      font-weight: 400;
+      margin-top: 2rem;
+    }
   }
 }
-
-//   display: flex;
-//   justify-content: space-between;
-//   align-items: end;

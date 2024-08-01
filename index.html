@@ -22,21 +22,14 @@
       referrerpolicy="no-referrer"
     />
 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
-    <script defer src="assets/js/slick-carousel.js"></script>
-
+    <link rel="stylesheet" href="assets/css/slick.min.css" />
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+    <link rel="stylesheet" href="assets/css/magnific-popup.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
     <title>Luxelife</title>
   </head>
   <body>
-    <header class="header-area">
+    <header class="header-area header-menu-area sticky-header">
       <div class="header">
         <a href="#" class="company-logo">
           <img src="./assets/images/Logo.svg" alt="company logo" />
@@ -142,47 +135,56 @@
                 </button>
               </div>
 
-              <div class="carousel-image-wrapper hero-carousel">
-                <div class="carousel-image">
-                  <img
-                    src="./assets/images/hero-carousel-img-1.png"
-                    alt="comfortable sofa for living room"
-                  />
+              <div class="hero-gallery-slider" id="hero-gallery-slider">
+                <div class="slick-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/hero-carousel-img-1.png"
+                      alt="Gallery Image"
+                    />
+                  </div>
                 </div>
-                <div class="carousel-image">
-                  <img
-                    src="./assets/images/hero-carousel-img-2.png"
-                    alt="comfortable sofa for living room"
-                  />
+                <div class="slick-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/hero-carousel-img-2.png"
+                      alt="Gallery Image"
+                    />
+                  </div>
                 </div>
-                <div class="carousel-image">
-                  <img
-                    src="./assets/images/hero-carousel-img-2.png"
-                    alt="comfortable sofa for living room"
-                  />
+                <div class="slick-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/hero-carousel-img-3.png"
+                      alt="Gallery Image"
+                    />
+                  </div>
                 </div>
-                <div class="carousel-image">
-                  <img
-                    src="./assets/images/hero-carousel-img-4.png"
-                    alt="comfortable sofa for living room"
-                  />
+                <div class="slick-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/hero-carousel-img-4.png"
+                      alt="Gallery Image"
+                    />
+                  </div>
                 </div>
-                <div class="carousel-image">
-                  <img
-                    src="./assets/images/hero-carousel-img-1.png"
-                    alt="comfortable sofa for living room"
-                  />
+                <div class="slick-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/hero-carousel-img-2.png"
+                      alt="Gallery Image"
+                    />
+                  </div>
+                </div>
+                <div class="slick-item">
+                  <div class="image">
+                    <img
+                      src="./assets/images/hero-carousel-img-3.png"
+                      alt="Gallery Image"
+                    />
+                  </div>
                 </div>
               </div>
-
-              <!-- <div class="carousel-control-wrapper">
-                <button class="carousel-left-control">
-                  <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <button class="carousel-left-control">
-                  <i class="fa-solid fa-arrow-right"></i>
-                </button>
-              </div> -->
             </div>
           </div>
         </div>
@@ -202,7 +204,10 @@
                 />
                 <div class="position-absolute project-countdown">
                   <div class="project-countdown__box">
-                    <h2>2k+</h2>
+                    <h2>
+                      <div class="counter">7</div>
+                      k+
+                    </h2>
                     <span>Project Completed</span>
                   </div>
                 </div>
@@ -211,17 +216,18 @@
 
             <!-- about details section -->
             <div class="col">
-              <div class="title-area">
-                <span class="sub-title sub-title-line">About us</span>
-                <h2 class="sec-title">
-                  Elevate Your Lifestyle with our <br />
-                  Meets Interior Design
-                </h2>
-                <p class="sec-text">
-                  It is a long established fact that a reader will be distracted
-                  by the readable content of a page when looking at its layout.
-                  Lorem Ipsum is simply dummyj
-                </p>
+              <div class="section-header">
+                <div class="title-area">
+                  <span class="sub-title sub-title-line">About us</span>
+                  <h2 class="sec-title">
+                    Elevate Your Lifestyle with our Meets Interior Design
+                  </h2>
+                  <p class="sec-text">
+                    It is a long established fact that a reader will be
+                    distracted by the readable content of a page when looking at
+                    its layout. Lorem Ipsum is simply dummyj
+                  </p>
+                </div>
               </div>
 
               <div class="section-about__details">
@@ -252,12 +258,16 @@
       <!-- service section -->
       <section class="section-service py-120">
         <div class="container text-center">
-          <div class="title-area text-white">
-            <span class="sub-title sub-title-line-both-side">our services</span>
-            <h2 class="sec-title">
-              transportation made easy <br />
-              interior design
-            </h2>
+          <div class="section-header content-center">
+            <div class="title-area text-white">
+              <span class="sub-title sub-title-line-both-side"
+                >our services</span
+              >
+              <h2 class="sec-title">
+                transportation made easy <br />
+                interior design
+              </h2>
+            </div>
           </div>
 
           <div class="service-list__box">
@@ -349,12 +359,16 @@
       <section class="section-gallery py-120">
         <div class="container">
           <div class="d-flex justify-content-between align-items-end">
-            <div class="title-area">
-              <span class="sub-title sub-title-line">Our latest portfolio</span>
-              <h2 class="sec-title">
-                Make your house a home <br />
-                with our design
-              </h2>
+            <div class="section-header">
+              <div class="title-area">
+                <span class="sub-title sub-title-line"
+                  >Our latest portfolio</span
+                >
+                <h2 class="sec-title">
+                  Make your house a home <br />
+                  with our design
+                </h2>
+              </div>
             </div>
             <button class="btn-primary">
               View more
@@ -415,7 +429,9 @@
               <div class="col">
                 <div class="counter-card">
                   <div class="counter-card__text">
-                    <h2 class="heading-secondary"><span>200</span>+</h2>
+                    <h2 class="heading-secondary">
+                      <span class="counter">200</span>+
+                    </h2>
                     <p class="pt-3 paragraph">Team member</p>
                   </div>
                 </div>
@@ -423,7 +439,9 @@
               <div class="col">
                 <div class="counter-card d-flex justify-content-center">
                   <div class="counter-card__text">
-                    <h2 class="heading-secondary"><span>20</span>+</h2>
+                    <h2 class="heading-secondary">
+                      <span class="counter">20</span>+
+                    </h2>
                     <p class="pt-3 paragraph">Winning award</p>
                   </div>
                 </div>
@@ -431,7 +449,9 @@
               <div class="col">
                 <div class="counter-card d-flex justify-content-center">
                   <div class="counter-card__text">
-                    <h2 class="heading-secondary"><span>900</span>+</h2>
+                    <h2 class="heading-secondary">
+                      <span class="counter">900</span>+
+                    </h2>
                     <p class="pt-3 paragraph">Client review</p>
                   </div>
                 </div>
@@ -442,7 +462,7 @@
                 >
                   <div class="counter-card__text">
                     <h2 class="heading-secondary">
-                      <span>10</span><span>k</span>+
+                      <span class="counter">10</span><span>k</span>+
                     </h2>
                     <p class="pt-3 paragraph">Complete project</p>
                   </div>
@@ -456,7 +476,13 @@
         <div class="video-thumbnail">
           <div class="video-thumbnail__overlay">
             <button class="video-play-button">
-              <i class="fa-solid fa-play"></i>
+              <a
+                href="https://www.youtube.com/watch?v=SZEflIVnhH8"
+                class="mfp-iframe video-play"
+              >
+                <i class="fa-solid fa-play"></i>
+              </a>
+              <!-- <i class="fa-solid fa-play"></i> -->
             </button>
           </div>
           <img
@@ -862,20 +888,28 @@
         <div class="container">
           <div class="row">
             <div class="col-4">
-              <div class="title-area">
-                <span class="sub-title sub-title-line">
-                  Clients Testimonials</span
-                >
-                <h2 class="sec-title">
-                  Unleash the Potential of your Interiors
-                </h2>
+              <div class="section-header">
+                <div class="title-area">
+                  <span class="sub-title sub-title-line">
+                    Clients Testimonials</span
+                  >
+                  <h2 class="sec-title">
+                    Unleash the Potential of your Interiors
+                  </h2>
+                </div>
               </div>
 
               <div class="carousel-control-wrapper pt-50">
-                <button class="carousel-left-control">
+                <button
+                  class="carousel-left-control"
+                  id="testimonial_one_prev_btn"
+                >
                   <i class="fa-solid fa-arrow-left"></i>
                 </button>
-                <button class="carousel-right-control control-active">
+                <button
+                  class="carousel-right-control"
+                  id="testimonial_one_next_btn"
+                >
                   <i class="fa-solid fa-arrow-right"></i>
                 </button>
               </div>
@@ -1103,12 +1137,22 @@
       <!-- blog section -->
       <section class="section-blog py-120">
         <div class="container">
-          <div class="title-area">
-            <span class="sub-title sub-title-line"> blog and news</span>
-            <h2 class="sec-title">
-              Designing Spaces for Every <br />
-              Taste and Budget
-            </h2>
+          <div class="section-header">
+            <div class="title-area">
+              <span class="sub-title sub-title-line">blog and news</span>
+              <h2 class="sec-title">
+                Designing Spaces for Every <br />
+                Taste and Budget
+              </h2>
+            </div>
+            <div class="carousel-control-wrapper">
+              <button class="carousel-left-control" id="#blog_slider_prev_btn">
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="carousel-right-control" id="#blog_slider_next_btn">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
           </div>
 
           <div class="mt-60">
@@ -1231,14 +1275,16 @@
         <div class="container">
           <div class="row gx-5 gap-between">
             <div class="col-5">
-              <div class="title-area">
-                <span class="sub-title sub-title-line"> STAY CONNECTED</span>
-                <h2 class="sec-title">Get A Quote</h2>
-                <p class="sec-text">
-                  Dictum ultrices porttitor amet nec sollicitudin mi molestie
-                  adipiscing netus. Lorem at ac ut morbi ullamcorper molestie
-                  lacus. Euismod nulla viverra condimentum
-                </p>
+              <div class="section-header">
+                <div class="title-area">
+                  <span class="sub-title sub-title-line"> STAY CONNECTED</span>
+                  <h2 class="sec-title">Get A Quote</h2>
+                  <p class="sec-text">
+                    Dictum ultrices porttitor amet nec sollicitudin mi molestie
+                    adipiscing netus. Lorem at ac ut morbi ullamcorper molestie
+                    lacus. Euismod nulla viverra condimentum
+                  </p>
+                </div>
               </div>
 
               <!-- message form -->
@@ -1424,11 +1470,15 @@
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
       integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="assets/js/waypoints.js"></script>
+    <script src="assets/js/custom.js"></script>
   </body>
 </html>

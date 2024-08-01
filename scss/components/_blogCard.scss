@@ -1,5 +1,9 @@
+.blog-carousel .slick-list.draggable {
+  margin: 0 -7.5px;
+}
+
 .blog-card {
-  min-width: 410px;
+  margin: 0 15px;
 
   &:hover {
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
